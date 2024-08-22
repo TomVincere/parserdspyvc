@@ -3,6 +3,7 @@ from discord.ext import commands, tasks
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import os
 
 token = os.getenv('token')
 
