@@ -4,6 +4,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
+token = os.getenv('token')
+
 intents = discord.Intents.default()
 intents.message_content = True
 intents.guilds = True
@@ -104,5 +106,4 @@ async def on_ready():
 
 
 # Запуск бота
-bot.run(
-    "MTE0NjY2MTYyMzMzNjAwOTcyOA.GJiZpG.OszHl6Yyy4FWw-gbgELCgaFyQiZiD_anhw_NCg")
+bot.run(token)
